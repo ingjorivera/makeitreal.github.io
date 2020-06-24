@@ -5,6 +5,41 @@
 
 </head>
 <body>
+    <script>
+        var arregloIni=[];
+        function count(palabra,letra){
+            
+            total=(palabra.split(letra).length -1);
+             
+           
+            console.log('count ("'+palabra+'","'+letra+'");  // retorna '+total);
+        }
+        count("Hello","l");
+
+       function filter(arreglo){
+        var arreglo_final=[];
+        var j=0;
+        //arreglo_numeros = arreglo_texto.split(/\s*,\s*/).map(Number);
+        var total=arreglo.length;
+       
+        for(var i=0;i<total;i++){
+            if(arreglo[i]>10){
+                arreglo_final[j]=arreglo[i];
+                j++;
+            }
+        }
+        
+        console.log('filter(['+arreglo+']); // retorna ['+arreglo_final+']');
+       }
+       filter([12,15,20,3,4,5]);
+
+       function hypotenuse(a,b){
+        var res=Math.hypot(a,b);
+        console.log('hypotenuse('+a+','+b+'); // retorna '+res);
+       }
+       hypotenuse(3,4)
+
+    </script>
 <h1>hola mundo</h1>
 
 </body>
