@@ -1,0 +1,59 @@
+body{
+background-image: url('bg.jpg');
+background-position: center;
+background-size: cover;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1.6fr 0.7fr 1fr;
+    grid-template-rows: 40vh;
+    gap: 1px 1px;
+    grid-template-areas: ". . foto . ." ". nombre nombre nombre ." ". . ciudad . ." ". . . . .";
+    align-items: center;
+  }
+  
+  .foto { 
+      grid-area: foto;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+     }
+  
+  .nombre { 
+      grid-area: nombre;   
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  .ciudad { 
+      grid-area: ciudad; 
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+.imagen_perfil{
+
+    height:200px;
+    width: 200px;
+    background-image: url('profile.jpg');
+    border-radius: 100%;
+    
+    border: 5px solid white;
+    background-size: cover;
+    background-position: center;
+}
+.nombre_txt{
+
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: white;
+}
+.ciudad_txt{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    color: white;
+}
